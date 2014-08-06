@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'jesta'
+require 'jesta/cmd'
+require 'jesta/settings'
+
+$settings = Jesta::Settings.load_config("settings.yml")
+
+if $settings["system_config"]["logging"]
+  require "logger"
+  $logger = Logger.new($settings["system_config"]["logger_path"])
+end
+
+Jesta::CMD.run
+
+

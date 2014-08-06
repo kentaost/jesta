@@ -1,0 +1,16 @@
+system_config:
+  logging: true
+  logger_path: "jesta.log"
+
+aws_config:
+  access_key: ""
+  secret_key: ""
+  region: ""
+  ssh_key_name: ""
+
+jesta_settings:
+  additional_disk_size: 10
+  export_device_file: "/dev/xvda"
+  tmp_device_file: "/dev/sdg"
+  tmp_dir: "/mnt"
+  tmp_file: "yourinstance.img"
